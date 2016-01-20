@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
+DEPEND=emacs? ( virtual/emacs ) mono? ( >=dev-lang/mono-0.95 ) nls? ( >=sys-devel/gettext-0.17 ) java? ( >=virtual/jdk-1.5 doc? ( dev-java/gjdoc ) ) java? ( >=dev-java/java-config-2.1.9-r1 )
+DESCRIPTION=Internationalized Domain Names (IDN) implementation
+EAPI=5
+HOMEPAGE=https://www.gnu.org/software/libidn/
+IUSE=doc emacs java mono nls static-libs elibc_FreeBSD java abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_ppc_32 abi_ppc_64 abi_s390_32 abi_s390_64
+KEYWORDS=*
+LICENSE=GPL-2 GPL-3 LGPL-3 java? ( Apache-2.0 )
+RDEPEND=emacs? ( virtual/emacs ) mono? ( >=dev-lang/mono-0.95 ) nls? ( >=virtual/libintl-0-r1[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_ppc_32(-)?,abi_ppc_64(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) java? ( >=virtual/jre-1.5 ) abi_x86_32? ( !<=app-emulation/emul-linux-x86-baselibs-20140508-r5 !app-emulation/emul-linux-x86-baselibs[-abi_x86_32(-)] ) java? ( >=dev-java/java-config-2.1.9-r1 )
+SLOT=0
+SRC_URI=mirror://gnu/libidn/libidn-1.30.tar.gz
+_eclasses_=elisp-common	3322f14f031ddc95feccd9089c9adc59	eutils	06133990e861be0fe60c2b428fd025d9	java-pkg-opt-2	f9bbbe5092225a2059aa9e6a3a2b52f1	java-utils-2	4241a8d9ed765c83041b38ac128505cd	mono-env	59ca1177366cc9e14521d3501e9bb281	multibuild	6d4858dc00f8bc51caf3f957f8430eb0	multilib	3bf24e6abb9b76d9f6c20600f0b716bf	multilib-build	0983c7893df461213a05f791cc7dea6d	multilib-minimal	13dd976916c35a1e2c8d170e840c7018	toolchain-funcs	48b38a216afb92db6314d6c3187abea3	versionator	865bc8b2fc9fcfb6d520bdf5a110f5ed
+_md5_=eea60bb1e490f97950e2c238b49e4754
